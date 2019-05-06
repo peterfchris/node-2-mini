@@ -26,6 +26,7 @@ module.exports = {
                 author: author ? author : bookx[index].author
             }
         }
+        res.send(books)
     },
     delete(req, res) {
         let { id } = req.params
